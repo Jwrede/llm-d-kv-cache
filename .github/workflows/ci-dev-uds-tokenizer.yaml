@@ -19,6 +19,7 @@ permissions:
 jobs:
   docker-build-and-push:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Checkout source
         uses: actions/checkout@v6
